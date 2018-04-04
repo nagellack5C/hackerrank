@@ -1,2 +1,2 @@
 # hackerrank
-solutions for various (I hope) HR challenges
+solutions for various HR challenges

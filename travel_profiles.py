@@ -1,5 +1,4 @@
-#https://www.hackerrank.com/contests/booking-hackathon/challenges/travel-profiles/submissions/code/1306928657
-
+#https://www.hackerrank.com/contests/booking-hackathon/challenges/travel-profiles/
 from operator import itemgetter
 
 #read hotels

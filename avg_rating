@@ -1,0 +1,33 @@
+#https://www.hackerrank.com/contests/w37/challenges/the-average-rating-of-top-employees/problem
+#!/bin/python3
+
+import os
+import sys
+
+# Complete the averageOfTopEmployees function below.
+def averageOfTopEmployees(rating):
+    sum_rat = 0
+    count = 0
+    for i in rating:
+        if i >= 90 and i <= 100:
+            sum_rat += i
+            count += 1
+    if count == 0:
+        print(0.00)
+    else:
+        avg_rat = float(sum_rat/count)
+        #avg_rat = 95.345
+        if str(avg_rat)[-1] == "5":
+          avg_rat += 0.1 ** (1 + len(str(avg_rat).split(".")))
+        print("%.2f" % avg_rat)
+
+if __name__ == '__main__':
+    n = int(input())
+
+    rating = []
+
+    for _ in range(n):
+        rating_item = int(input())
+        rating.append(rating_item)
+
+    averageOfTopEmployees(rating)
